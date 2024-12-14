@@ -1,0 +1,12 @@
+CSS berikut digunakan untuk mengatasi masalah layouting dengan elemen float. Mari kita bahas setiap properti dan fungsinya:
+
+1. Selector .container::after
+.container: Selektor yang menargetkan elemen dengan kelas container.
+::after: Pseudo-elemen yang disisipkan setelah konten elemen .container. Pseudo-elemen ini bukan elemen nyata dalam HTML, tetapi dibuat oleh CSS untuk keperluan styling.
+2. content: '';
+Properti content diperlukan untuk membuat pseudo-elemen muncul. Dalam hal ini, kontennya adalah string kosong (''), karena pseudo-elemen hanya digunakan untuk tujuan styling, bukan untuk menambahkan teks.
+3. display: block;
+Menjadikan pseudo-elemen sebagai elemen block-level, yang membuatnya memenuhi lebar penuh dari elemen induknya (.container).
+4. clear: both;
+Properti ini digunakan untuk menghapus float pada elemen sebelumnya. Elemen yang diatur float di dalam .container akan berhenti memengaruhi layout elemen berikutnya (dalam hal ini, pseudo-elemen).
+Dengan kata lain, properti ini membuat .container secara otomatis menyesuaikan tinggi sesuai dengan elemen-elemen float di dalamnya.
