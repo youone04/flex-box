@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Auto Fill</title>
+    <style>
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        /* Membuat item otomatis turun ke baris baru / */
+        gap: 16px;
+        /* / Jarak antar elemen / */
+      }
+      .item1,
+      .item2,
+      .item3 {
+        flex: 1 1 calc(33.333% - 16px);
+        /* / 3 kolom per baris / */
+        box-sizing: border-box;
+        /* / Agar padding dan border tidak menambah lebar total / */
+        background-color: lightblue;
+        padding: 20px;
+        text-align: center;
+        border: 1px solid #ccc;
+      }
+      .item4,
+      .item5 {
+        flex: 1 1 calc(50% - 16px);
+        /* / 3 kolom per baris / */
+        box-sizing: border-box;
+        /* Agar padding dan border tidak menambah lebar total / */
+        background-color: lightblue;
+        padding: 20px;
+        text-align: center;
+        border: 1px solid #ccc;
+      }
+      .item6,
+      .item7 {
+        flex: 1 1 calc(100% - 16px);
+        /* 3 kolom per baris / */
+        box-sizing: border-box;
+        /* / Agar padding dan border tidak menambah lebar total / */
+        background-color: lightblue;
+        padding: 20px;
+        text-align: center;
+        border: 1px solid #ccc;
+      }
+      /* / Jika hanya ada 1 item dalam baris, buat item memenuhi lebar kontainer / */
+      @media (max-width: 600px) {
+        .item1,
+        .item2,
+        .item3,
+        .item4,
+        .item5,
+        .item6,
+        .item7 {
+          flex: 1 1 100%;
+          /* / Item memenuhi lebar kontainer di layar kecil */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item1">Item 1</div>
+      <div class="item2">Item 2</div>
+      <div class="item3">Item 3</div>
+      <div class="item4">Item 4</div>
+      <div class="item5">Item 5</div>
+      <div class="item6">Item 6</div>
+      <div class="item7">Item 7</div>
+    </div>
+  </body>
+</html>
