@@ -17,6 +17,8 @@ height: 150px;
 }
 .container div.dua{
 flex: 2;
+/* align-self: flex-end; */
+align-self: center;
 }
 .tiga {
 }
