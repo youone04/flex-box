@@ -6,6 +6,9 @@ padding: 5px;
 box-sizing: border-box;
 display: flex;
 gap: 3px;
+height: 400px;
+align-items: center;
+justify-content: center;
 
 }
 .container div {
