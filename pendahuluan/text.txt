@@ -10,3 +10,19 @@ Menjadikan pseudo-elemen sebagai elemen block-level, yang membuatnya memenuhi le
 4. clear: both;
 Properti ini digunakan untuk menghapus float pada elemen sebelumnya. Elemen yang diatur float di dalam .container akan berhenti memengaruhi layout elemen berikutnya (dalam hal ini, pseudo-elemen).
 Dengan kata lain, properti ini membuat .container secara otomatis menyesuaikan tinggi sesuai dengan elemen-elemen float di dalamnya.
+
+ flex: 1 1 calc(100% - 16px);
+ Format Properti flex
+    Properti flex adalah shorthand untuk tiga properti:
+
+    flex-grow: Seberapa banyak elemen dapat berkembang.
+    flex-shrink: Seberapa banyak elemen dapat menyusut.
+    flex-basis: Ukuran awal elemen sebelum pertumbuhan atau penyusutan diterapkan.
+    
+    Jadi, flex: 1 1 calc(100% - 16px); setara dengan:
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: calc(100% - 16px);
+
+
+1. https://www.youtube.com/watch?v=-J372iDFU8Y
