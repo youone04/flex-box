@@ -1,1 +1,38 @@
 1. https://www.youtube.com/watch?v=u7w0B2f91rk: 3: 27
+
+Fungsi box-sizing dalam CSS adalah untuk mengontrol bagaimana ukuran elemen dihitung, baik itu berdasarkan konten elemen saja atau termasuk padding dan border. Properti ini sangat berguna untuk memastikan elemen memiliki ukuran yang konsisten, terutama saat ada padding dan border.
+
+Nilai pada box-sizing
+1. content-box (default):
+
+Hanya ukuran konten yang dihitung untuk menentukan width dan height.
+Padding dan border tidak termasuk dalam ukuran elemen, sehingga elemen akan tampak lebih besar jika padding atau border ditambahkan.
+Contoh:
+css
+Copy code
+div {
+  box-sizing: content-box;
+  width: 200px;
+  padding: 20px;
+  border: 10px solid black;
+}
+Total lebar elemen = 200px (konten) + 20px * 2 (padding) + 10px * 2 (border) = 260px.
+
+2. border-box:
+
+width dan height elemen mencakup konten, padding, dan border.
+Ukuran total elemen tetap sesuai nilai width dan height, sehingga padding dan border mengurangi ukuran area konten.
+Contoh:
+css
+Copy code
+div {
+  box-sizing: border-box;
+  width: 200px;
+  padding: 20px;
+  border: 10px solid black;
+}
+Total lebar elemen tetap 200px. Area konten berkurang karena ada padding dan border.
+
+3. inherit:
+
+Mewarisi nilai box-sizing dari elemen induknya.
