@@ -9,4 +9,19 @@ html , body {
     background-color: #fff;
     padding: 20px;
     box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+}
+.judul{
+    flex:  1 1 100%;
+}
+.side-satu{
+    flex: 1 1 50%;
+    background: red;
+
+}
+.side-dua{
+    flex: 1 1 50%;
+    background: blue;
+
 }
