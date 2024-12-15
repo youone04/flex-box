@@ -13,15 +13,18 @@ html , body {
     flex-wrap: wrap;
 }
 .judul{
-    flex:  1 1 100%;
+    flex: 3;
+    order: 2;
 }
 .side-satu{
-    flex: 1 1 50%;
+    flex: 1;
     background: red;
+    order: 1;
 
 }
 .side-dua{
-    flex: 1 1 50%;
+    flex: 1;
     background: blue;
+    order: 3;
 
 }
