@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 30px;
+}
+
+.item1{
+    border: 1px solid black;
+    flex: 1 1 calc(100%);
+    padding: 50px;
+}
+
+.item2, .item3 {
+    border: 1px solid black;
+    flex: 1 1 calc(50% - 10px);
+    box-sizing: border-box;
+    padding: 50px;
+}

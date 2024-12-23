@@ -1,0 +1,63 @@
+
+
+Flex grow
+
+Penjelasan Properti flex
+Properti flex adalah shorthand untuk tiga properti Flexbox:
+
+================================= start ==========================================
+Penjelasan :
+
+flex-grow: Seberapa besar elemen boleh tumbuh relatif terhadap elemen lain di dalam kontainer Flexbox.
+flex-shrink: Seberapa besar elemen boleh menyusut jika ruang tersedia lebih kecil.
+flex-basis: Ukuran dasar elemen sebelum ruang ekstra dialokasikan.
+flex: 1
+Ketika Anda menuliskan flex: 1, itu setara dengan:
+
+
+================================= end ==========================================
+
+
+================================= start ==========================================
+css
+Copy code
+flex: 1 1 0;
+Artinya:
+
+flex-grow: 1: Elemen dapat tumbuh untuk mengisi ruang kosong yang tersedia di dalam kontainer Flexbox.
+flex-shrink: 1: Elemen dapat menyusut jika ruang menjadi terlalu kecil.
+flex-basis: 0: Elemen mulai dengan ukuran dasar 0 sebelum ruang tambahan dialokasikan.
+
+================================= end ==========================================
+
+
+flex: 2
+Ketika Anda menuliskan flex: 2, itu setara dengan:
+
+css
+Copy code
+flex: 2 1 0;
+Artinya:
+
+flex-grow: 2: Elemen ini akan tumbuh dua kali lebih besar dibandingkan elemen dengan flex-grow: 1.
+flex-shrink: 1: Elemen dapat menyusut jika ruang menjadi terlalu kecil.
+flex-basis: 0: Elemen mulai dengan ukuran dasar 0 sebelum ruang tambahan dialokasikan.
+Contoh pada Kode Anda
+Struktur:
+item1: Memiliki flex: 1, sehingga akan mengambil 1 bagian ruang yang tersedia.
+item2 dan item3: Memiliki flex: 2, sehingga masing-masing akan mengambil 2 bagian ruang yang tersedia.
+Bagaimana Ruang Dibagi?
+Ketika kontainer memiliki ruang yang tersedia (misalnya 600px), Flexbox akan membagi ruang berdasarkan rasio flex-grow:
+
+
+
+Total flex-grow = 1 (item1) + 2 (item2) + 2 (item3) = 5 bagian.
+Item 1: Mendapatkan 1/5 dari ruang, yaitu 20%.
+Item 2: Mendapatkan 2/5 dari ruang, yaitu 40%.
+Item 3: Mendapatkan 2/5 dari ruang, yaitu 40%.
+Dengan Properti gap
+Properti gap: 10px; menentukan jarak antar elemen di dalam kontainer Flexbox. Ruang ini tidak dihitung sebagai bagian dari perhitungan flex.
+
+Kesimpulan
+flex: 1: Membagi ruang secara proporsional sebanyak 1 bagian.
+flex: 2: Membagi ruang secara proporsional sebanyak 2 bagian (dua kali lebih besar dari elemen dengan flex: 1).

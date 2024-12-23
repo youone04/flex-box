@@ -1,4 +1,4 @@
-1. https://www.youtube.com/watch?v=u7w0B2f91rk: 3: 27
+1. https://www.youtube.com/watch?v=u7w0B2f91rk
 
 Fungsi box-sizing dalam CSS adalah untuk mengontrol bagaimana ukuran elemen dihitung, baik itu berdasarkan konten elemen saja atau termasuk padding dan border. Properti ini sangat berguna untuk memastikan elemen memiliki ukuran yang konsisten, terutama saat ada padding dan border.
 
@@ -36,3 +36,4 @@ Total lebar elemen tetap 200px. Area konten berkurang karena ada padding dan bor
 3. inherit:
 
 Mewarisi nilai box-sizing dari elemen induknya.
+

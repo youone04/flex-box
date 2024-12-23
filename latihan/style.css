@@ -1,30 +1,56 @@
-html , body {
-    padding: 0;
-    margin: 0;
-    background-color: gray;
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background-color: gray;
 }
-.container-satu{
-    width: 800px;
-    margin: 50px auto;
-    background-color: #fff;
-    padding: 20px;
-    box-sizing: border-box;
-    display: flex;
-    flex-wrap: wrap;
+.container-satu {
+  max-width: 800px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
 }
-.judul{
-    flex: 3;
-    order: 2;
+.judul {
+  flex: 3;
+  order: 2;
 }
-.side-satu{
-    flex: 1;
-    background: red;
-    order: 1;
+.side-satu {
+  flex: 1;
+  order: 1;
+}
+.side-dua {
+  flex: 1;
+  order: 3;
+}
+/* akahir latihan 1 */
 
+/* latihan 2 */
+.container-dua {
+  max-width: 800px;
+  margin: 50px auto;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
 }
-.side-dua{
-    flex: 1;
-    background: blue;
-    order: 3;
+.layanan {
+  box-sizing: border-box;
+  padding: 20px;
+}
 
+.layanan.satu {
+  flex: 1 1 calc(33% - 16px);
+  background-color: aqua;
 }
+.layanan.dua {
+  flex: 1 1 calc(33% - 16px);
+  background-color: greenyellow;
+}
+.layanan.tiga {
+  flex: 1 1 calc(33% - 16px);
+  background-color: red;
+}
+/* akhir latihan 2 */
