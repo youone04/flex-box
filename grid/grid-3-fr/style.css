@@ -2,9 +2,7 @@
     display: grid;
     margin: 50px auto;
     /* buat 3 colom */
-    grid-template-columns: 40% auto 100px auto;
-    /* buat  3 row */
-    grid-template-rows: 40% auto 100px;
+    grid-template-columns:1fr 2fr 3fr;
     gap: 2px;
 
 }
@@ -14,8 +12,8 @@
     justify-content: center;
     align-items: center;
 }
-
-.item.span{
-    grid-column: span 2;
-    grid-row: span 2;
+/* even : genap
+odd : ganjil */
+.item:nth-child(even){ 
+background-color: rgb(123, 37, 37);
 }
