@@ -1,0 +1,3 @@
+1. grid area penggabungan lebih dari 1 cel yang membentuk kotak
+2. grid track adalah ukuran cell
+3. grid gap adalah jarak antaran cell
