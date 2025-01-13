@@ -1,0 +1,4 @@
+1. repeat() adalah menentukan grid track secara berulang
+2. min-content & max-content adalah menentukan ukuran grid track berdasarkan content pada sebuah item
+3. minimax() adalah menentukan minimal dan maksimal pada grid track
+4. auto-fill & auto-fit adalah menentukan jumlah item pada grid track

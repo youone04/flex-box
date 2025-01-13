@@ -1,0 +1,23 @@
+
+.container {
+    display: grid;
+    margin: 50px auto;
+    border: 1px solid orange;
+    /* min and max content */
+    /* untuk tes coba kecilkan layar */
+    grid-template-columns: repeat(auto-fill, 100px);
+    gap: auto;
+  }
+  .item {
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /* even : genap
+  odd : ganjil */
+  .item:nth-child(even) {
+    background-color: rgb(123, 37, 37);
+    color: white;
+  }
+  

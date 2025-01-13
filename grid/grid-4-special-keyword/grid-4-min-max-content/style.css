@@ -1,0 +1,20 @@
+.container {
+    display: grid;
+    margin: 50px auto;
+    /* min and max content */
+    grid-template-columns: 1fr min-content max-content;
+    gap: 2px;
+  }
+  .item {
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /* even : genap
+  odd : ganjil */
+  .item:nth-child(even) {
+    background-color: rgb(123, 37, 37);
+    color: white;
+  }
+  
