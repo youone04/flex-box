@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: grid;
+    height: 500px;
+    width: 80%;
+    margin: auto;
+    /* grid-template-columns: minmax(200px ,300px) 1fr 1fr;
+    grid-template-rows: repeat(3, 100px); */
+
+    grid-template-columns: [satu] minmax(200px ,300px) [dua] 1fr [tiga] 1fr [empat];
+    grid-template-rows: [baris1] 100px [baris2] 100px [baris3] 100px [baris4];
+}
+
+.item{
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.my-item{
+    background-color: aqua;
+    width: 100%;
+
+    /* grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4; */
+
+     /* artinya start 1 + 2 jika menggunakan span */
+    /* grid-column-start: 1; 
+    grid-column-end: span 2; 
+    grid-row-start: 1;
+    grid-row-end: span 2;  */
+
+    /* grid-column-start: satu;
+    grid-column-end: empat;
+    grid-row-start: baris1;
+    grid-row-end: baris4; */
+
+    grid-column-start: -1;
+    grid-column-end: -4;
+    grid-row-start: -1;
+    grid-row-start: -4;
+
+  
+
+}
